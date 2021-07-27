@@ -10,10 +10,6 @@ Activare virtual env
 .venv\Scripts\activate.bat
 ```
 
-```
-pip install -r requirements.txt
-```
-
 Am editat fisierul app.py, generat de comanda cdk init, folosind un template din https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/python/example_code/cdk/app.py 
 
 ```
@@ -35,6 +31,13 @@ S3Stack(app, "homework-cdk-stack")
 app.synth()
 
 ```
+
+Instalare requirements
+```
+pip install -r requirements.txt
+```
+
+
 Am rulat comanda synthesize pentru crearea template-ului CloudFormation 
 ```
 cdk synth 
