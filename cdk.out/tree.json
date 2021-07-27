@@ -1,0 +1,91 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree",
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Construct",
+          "version": "1.115.0"
+        }
+      },
+      "homework-cdk-stack": {
+        "id": "homework-cdk-stack",
+        "path": "homework-cdk-stack",
+        "children": {
+          "homework-cdk-bucket": {
+            "id": "homework-cdk-bucket",
+            "path": "homework-cdk-stack/homework-cdk-bucket",
+            "children": {
+              "Notifications": {
+                "id": "Notifications",
+                "path": "homework-cdk-stack/homework-cdk-bucket/Notifications",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.115.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "homework-cdk-stack/homework-cdk-bucket/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {
+                    "versioningConfiguration": {
+                      "status": "Enabled"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3.CfnBucket",
+                  "version": "1.115.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-s3.Bucket",
+              "version": "1.115.0"
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "homework-cdk-stack/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "homework-cdk-stack/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.115.0"
+                }
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "homework-cdk-stack/CDKMetadata/Condition",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnCondition",
+                  "version": "1.115.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.115.0"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Stack",
+          "version": "1.115.0"
+        }
+      }
+    },
+    "constructInfo": {
+      "fqn": "@aws-cdk/core.App",
+      "version": "1.115.0"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "version": "13.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "homework-cdk-stack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "homework-cdk-stack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/homework-cdk-stack/homework-cdk-bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "homeworkcdkbucketBBDE00F2",
+            "trace": [
+              "new Bucket (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:573:26)",
+              "C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:8154:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:8582:24)",
+              "Kernel._create (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:8154:34)",
+              "Kernel.create (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:7895:29)",
+              "KernelHost.processRequest (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:9479:36)",
+              "KernelHost.run (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:9442:22)",
+              "Immediate._onImmediate (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:9443:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/homework-cdk-stack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:22:30)",
+              "C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:139:9",
+              "visit (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:200:9)",
+              "visit (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:197:9)",
+              "injectMetadataResources (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:128:5)",
+              "Object.synthesize (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:17:5)",
+              "App.synth (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\core\\lib\\stage.js:100:41)",
+              "C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:7970:134",
+              "Kernel._wrapSandboxCode (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:8582:24)",
+              "C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:7970:107",
+              "Kernel._ensureSync (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:8563:28)",
+              "Kernel.invoke (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:7970:34)",
+              "KernelHost.processRequest (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:9479:36)",
+              "KernelHost.run (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:9442:22)",
+              "Immediate._onImmediate (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:9443:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/homework-cdk-stack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:30:35)",
+              "C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:139:9",
+              "visit (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:200:9)",
+              "visit (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:197:9)",
+              "injectMetadataResources (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:128:5)",
+              "Object.synthesize (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:17:5)",
+              "App.synth (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\jsii-kernel-RbWPJb\\node_modules\\@aws-cdk\\core\\lib\\stage.js:100:41)",
+              "C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:7970:134",
+              "Kernel._wrapSandboxCode (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:8582:24)",
+              "C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:7970:107",
+              "Kernel._ensureSync (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:8563:28)",
+              "Kernel.invoke (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:7970:34)",
+              "KernelHost.processRequest (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:9479:36)",
+              "KernelHost.run (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:9442:22)",
+              "Immediate._onImmediate (C:\\Users\\ASTOIC~1\\AppData\\Local\\Temp\\tmp9_2cgvra\\lib\\program.js:9443:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "homework-cdk-stack"
+    }
+  }
+}
