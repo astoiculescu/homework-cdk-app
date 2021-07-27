@@ -1,9 +1,11 @@
+Pentru rezolvare am folosit urmatoarele comenzi:
 
+Initializare
 ```
 cdk init sample-app --language python
 ```
 
-#activate virtual env
+Activare virtual env
 ```
 .venv\Scripts\activate.bat
 ```
@@ -12,7 +14,7 @@ cdk init sample-app --language python
 pip install -r requirements.txt
 ```
 
-Am editat fisierul app.py, generat de comanda cdk init
+Am editat fisierul app.py, generat de comanda cdk init, folosind un template din https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/python/example_code/cdk/app.py 
 
 ```
 from aws_cdk import (
@@ -43,7 +45,10 @@ Deploy
 cdk deploy homework-cdk-stack
 ```
 
-Am verificat in consola ca s-a creat stackul si s3 bucket
+Am verificat in consola ca s-a creat stackul si s3 bucket si in consola
+```
+aws cloudformation list-stacks
+```
 
 Cleanup pt a fi sigur ca nu raman resurse create
 ```
