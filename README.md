@@ -12,13 +12,13 @@ cdk init sample-app --language python
 pip install -r requirements.txt
 ```
 
-Am editat fisierul generat app.py
+Am editat fisierul app.py, generat de comanda cdk init
+
 ```
 from aws_cdk import (
     aws_s3 as s3,
     core,
 )
-
 
 class S3Stack(core.Stack):
     def __init__(self, app: core.App, id: str) -> None:
@@ -33,13 +33,19 @@ S3Stack(app, "homework-cdk-stack")
 app.synth()
 
 ```
-
+Am rulat comanda synthesize pentru crearea template-ului CloudFormation 
+```
 cdk synth 
+```
 
-#deploy
+Deploy
+```
 cdk deploy homework-cdk-stack
+```
 
-#verificat in consola ca s-a creat stackul si s3 bucket
+Am verificat in consola ca s-a creat stackul si s3 bucket
 
-#cleanup 
+Cleanup pt a fi sigur ca nu raman resurse create
+```
 cdk destroy
+```
